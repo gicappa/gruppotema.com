@@ -19,12 +19,12 @@ role :app, "giankavh"                          # This may be the same as your `W
 role :db,  "giankavh", :primary => true # This is where Rails migrations will run
 role :db,  "giankavh"
 
-$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+#$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
 
-require "rvm/capistrano"                  # Load RVM's capistrano plugin.
+require "rvm-capistrano"                  # Load RVM's capistrano plugin.
 set :rvm_ruby_string, 'ruby-1.9.2-p290'        # Or whatever env you want it to run in.
 #set :rvm_type, :system  # Copy the exact line. I really mean :user here
-set :rvm_type, :user  # Copy the exact line. I really mean :user here
+#set :rvm_type, :user  # Copy the exact line. I really mean :user here
 
 set :normalize_asset_timestamps, false
 
