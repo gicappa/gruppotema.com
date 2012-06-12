@@ -42,3 +42,37 @@ section {
 
 }
 
+.box {
+	.whattodo {
+		padding-top: 38px;
+	}
+	&.contactus { 
+		background-color: #BB2922;// 187 41 34 #ed403a 237 64 58
+	    background-image: linear-gradient(-90deg, rgb(237, 64, 58), rgb(187, 41, 34));
+	    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(rgb(237, 64, 58)), to(rgb(187, 41, 34)));
+	    background-image: -moz-linear-gradient(-90deg, rgb(237, 64, 58), rgb(187, 41, 34));
+		&:hover { 
+		    background-image: linear-gradient(90deg, #d23631, rgb(187, 41, 34));
+		    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(rgb(187, 41, 34)), to(#d23631));
+		    background-image: -moz-linear-gradient(90deg, #d23631, rgb(187, 41, 34));
+		}
+
+	    text-shadow: 0 -1px 0 rgba(158, 186, 97, 0.25);
+		
+		a {
+			display: block;
+		    line-height: 36px;
+		    font-weight: bold;
+		    margin: 0;
+		    text-rendering: optimizelegibility;
+			color: white;
+			font-size: 240%;
+			padding-top: 38px;
+			&:hover {
+/*				text-decoration: none;*/
+			}
+		}
+		
+	}
+}
+
